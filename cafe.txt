@@ -1,0 +1,35 @@
+pages/
+--|Home
+--|About
+--|Our 
+
+*Milk Based
+*Single Origin
+*
+
+backup: 
+<form class="flex w-2/3 flex-row-reverse pr-2 py-2 h-full">
+                    <div class="text-cafe-1 w-full h-full">
+                        <input type="search" class="inputnav bg-cafe-3 h-full w-full  pr-4 pl-4 border-b border-cafe-3 hover:border-b hover:border-cafe-1 focus:outline-none focus:border-b focus:border-cafe-1 transition ease-out duration-500"
+                        placeholder="Search">
+                    </div>
+                </form>
+
+<div class="flex items-center md:justify-center justify-end p-2">
+        <div class="relative w-11/12 h-11/12 group bg-cafe-5 rounded shadow-md bg-gray-600 overflow-hidden">
+          <img src="~/assets/images/beverages.jpg" class="group-hover:opacity-50 transition ease duration-500" alt="beverages">
+          <NuxtLink to="/menu/beverages" class="absolute z-10 inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition ease duration-500">
+            <div class="font-Mon text-xl font-semibold text-cafe-1 tracking-widest"> 
+              BEVERAGES 
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+
+Book Your Seat!
+*Meja berapa orang?
+*Berapa orang?
+*Di lantai berapa?
+*Smoking room?
+*Waktu?
+*Atas Nama?
