@@ -24,15 +24,19 @@
                     hover:border-b hover:border-cafe-1 transition ease-out duration-500"
                     to="/menu/food">Food</NuxtLink>
                 </div>
-                <div v-if="$auth.user && !$auth.user.admin" class="px-2 pt-2">
-                    <NuxtLink class="border-b border-cafe-3 font-medium pb-1
-                    hover:border-b hover:border-cafe-1 transition ease-out duration-500"
-                    to="/account/book">Book Your Seat!</NuxtLink>
+                <div v-if="$auth.loggedIn">
+                    <div v-if="!$auth.user.admin" class="px-2 pt-2">
+                        <NuxtLink class="border-b border-cafe-3 font-medium pb-1
+                        hover:border-b hover:border-cafe-1 transition ease-out duration-500"
+                        to="/account/book">Book Your Seat!</NuxtLink>
+                    </div>
                 </div>
-                <div v-if="$auth.user.admin" class="px-2 pt-2">
-                    <NuxtLink class="border-b border-cafe-3 font-medium pb-1
-                    hover:border-b hover:border-cafe-1 transition ease-out duration-500"
-                    to="/admin">Admin</NuxtLink>
+                <div v-if="$auth.loggedIn">
+                    <div v-if="$auth.user.admin" class="px-2 pt-2">
+                        <NuxtLink class="border-b border-cafe-3 font-medium pb-1
+                        hover:border-b hover:border-cafe-1 transition ease-out duration-500"
+                        to="/admin">Admin</NuxtLink>
+                    </div>
                 </div>
             </div>
             <div class="flex flex-row-reverse items-center w-2/5">

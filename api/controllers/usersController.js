@@ -32,7 +32,7 @@ module.exports.register = [
         full_name : req.body.full_name,
         email : req.body.email,
         password : req.body.password,
-        admin : req.body.admin
+        admin : false
     })
 
     // encrypt password
