@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto mb-10 mt-10 flex justify-center">
-        <div class="flex items-center rounded flex-col bg-cafe-3 bg-opacity-70 w-2/5">
+        <div class="flex items-center rounded flex-col bg-cafe-3 bg-opacity-70 w-2/5 md:w-4/5">
             <h1 class="text-xl mt-8 mb-2 font-medium text-cafe-1 font-Mon tracking-widest">
                 Your Booking: 
             </h1>

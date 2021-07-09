@@ -128,13 +128,19 @@
             </div>
         </div>
         <transition name="slide-top">
-            <div v-if="menusm" class="hidden md:flex md:items-center md:pl-5 md:bg-cafe-1 md:h-12 md:w-full">
-                <NuxtLink class="text-cafe-3 pr-2 font-medium" 
-                to="/about">About Us</NuxtLink>
-                <NuxtLink class="text-cafe-3 pr-2 font-medium" 
-                to="/menu/beverages">Beverages</NuxtLink>
-                <NuxtLink class="text-cafe-3 font-medium" 
-                to="/menu/food">Food</NuxtLink>
+            <div v-if="menusm" class="hidden md:flex md:items-center md:justify-between md:px-5 md:bg-cafe-1 md:h-12 md:w-full">
+                <div class="flex items-center">
+                    <NuxtLink class="text-cafe-3 pr-2 font-medium" 
+                    to="/about">About Us</NuxtLink>
+                    <NuxtLink class="text-cafe-3 pr-2 font-medium" 
+                    to="/menu/beverages">Beverages</NuxtLink>
+                    <NuxtLink class="text-cafe-3 font-medium" 
+                    to="/menu/food">Food</NuxtLink>
+                </div>
+                <div class="flex items-center">
+                    <NuxtLink class="text-cafe-3 pr-2 font-medium" to="/account/signup">Sign Up</NuxtLink>
+                    <NuxtLink class="text-cafe-3 pr-2 font-medium" to="/account/login">Log In</NuxtLink>
+                </div>
             </div>
         </transition>
         <transition name="slide-top">
@@ -197,15 +203,15 @@
     appearance: none;
 }
 .fade-enter-active {
-  transition: all .5s ease-out;
-  transition-delay: 0.5s;
+  transition: all .2s ease-out;
+  transition-delay: 0.2s;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
 .slide-fade-enter-active,
 .slide-fade-leave-active  {
-  transition: all .5s ease-out;
+  transition: all .2s ease-out;
 }
 .slide-fade-enter,
 .slide-fade-leave-to {
@@ -217,7 +223,7 @@
 }    
 .slide-top-enter-active,
 .slide-top-leave-active  {
-  transition: all .5s ease-in;
+  transition: all .2s ease-in;
 }
 
 </style>
