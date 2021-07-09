@@ -46,17 +46,11 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Do away with the baseUrl when using proxy
-     proxy: true
-   },
- 
-   proxy: {
-     // Simple proxy
-     "/api": {
-       target: "https://sl-o-cafe.vercel.app"
-     }
-   },
+  axios: {},
+
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL || 'https://nuxtjs.org'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
