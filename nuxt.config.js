@@ -53,7 +53,7 @@ export default {
  
    proxy: {
      // Simple proxy
-     "/api/": {
+     "/api": {
        target: "https://sl-o-cafe.vercel.app"
      }
    },
