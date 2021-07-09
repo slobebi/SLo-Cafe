@@ -50,12 +50,6 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
-  proxy: {
-    '/api/' : {
-      target: 'https://sl-o-cafe.vercel.app'
-    }
-  },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
