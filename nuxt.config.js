@@ -54,8 +54,7 @@ export default {
    proxy: {
      // Simple proxy
      "/api/": {
-       target: "https://sl-o-cafe.vercel.app/",
-       pathRewrite: { "^/api/": "" }
+       target: "https://sl-o-cafe.vercel.app"
      }
    },
 
