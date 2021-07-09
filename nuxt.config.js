@@ -17,9 +17,7 @@ export default {
     ]
   },
 
-  env : {
-    baseURL: process.env.BASE_URL
-  },
+  env : {},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -48,10 +46,8 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
-  publicRuntimeConfig: {
-    baseURL: process.env.BASE_URL
+  axios: {
+    baseURL : '/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
