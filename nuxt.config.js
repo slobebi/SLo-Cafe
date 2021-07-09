@@ -17,9 +17,7 @@ export default {
     ]
   },
 
-  env : {
-    baseUrl : process.env.BASE_URL || 'http://localhost:3000'
-  },
+  env : {},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -48,7 +46,18 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    // Do away with the baseUrl when using proxy
+     proxy: true
+   },
+ 
+   proxy: {
+     // Simple proxy
+     "/api/": {
+       target: "https://sl-o-cafe.vercel.app/",
+       pathRewrite: { "^/api/": "" }
+     }
+   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
